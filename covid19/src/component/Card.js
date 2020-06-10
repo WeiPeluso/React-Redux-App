@@ -2,11 +2,11 @@ import React from 'react'
 
 const Card =(props)=>{
     return (
-        <div>
+        <div className="card">
         <h2>{props.title}</h2>
-        <p>{props.cases}</p>
-        <p>{props.date}</p>
-        <p>Number of {props.description} of COVID-19.</p>
+        <p className="cases">{props.cases}</p>
+        <p className="date">{props.date}</p>
+        <p className="description">Number of {props.description} of COVID-19.</p>
         </div>
     )
 }

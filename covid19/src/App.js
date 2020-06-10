@@ -12,10 +12,18 @@ function App(props) {
 
   return (
     <div className="App">
-      <h1>Covid-19 Cases</h1>
+      <h1>Covid-19 Global Data</h1>
+      <div className="cardContainer">
+        <div className="infected">
       <Card title={"Infected"} description={"active cases"} cases={props.confirmedCases} date={props.date}/>
-      <Card title={"Recovered"} description={"recoveries"} cases={props.recoveredCases} date={props.date}/>
-      <Card title={"Deaths"} description={"deaths"} cases={props.deaths} date={props.date}/>
+      </div>
+      <div className="recovered">
+      <Card className="card recovered" title={"Recovered"} description={"recoveries"} cases={props.recoveredCases} date={props.date}/>
+      </div>
+      <div className="death">
+      <Card className="card deaths" title={"Deaths"} description={"deaths"} cases={props.deaths} date={props.date}/>
+      </div>
+      </div>
     </div>
   );
 }
