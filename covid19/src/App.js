@@ -13,9 +13,9 @@ function App(props) {
   return (
     <div className="App">
       <h1>Covid-19 Cases</h1>
-      <Card title={"Infected"} description={"active cases"} cases={props.confirmedCases}/>
-      <Card title={"Recovered"} description={"recoveries"} cases={props.recoveredCases}/>
-      <Card title={"Deaths"} description={"deaths"} cases={props.deaths}/>
+      <Card title={"Infected"} description={"active cases"} cases={props.confirmedCases} date={props.date}/>
+      <Card title={"Recovered"} description={"recoveries"} cases={props.recoveredCases} date={props.date}/>
+      <Card title={"Deaths"} description={"deaths"} cases={props.deaths} date={props.date}/>
     </div>
   );
 }

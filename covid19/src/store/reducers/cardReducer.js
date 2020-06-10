@@ -24,7 +24,7 @@ export const cardReducer=(state=initialState,action)=>{
             confirmedCases:action.payload.confirmed.value,
             recoveredCases:action.payload.recovered.value,
             deaths:action.payload.deaths.value,
-            date: action.payload.lastUpdate
+            date: new Date(action.payload.lastUpdate).toDateString()
         }
      default:
          return state;
